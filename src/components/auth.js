@@ -30,7 +30,7 @@ export const Auth = () => {
     return (
       <div>
         <div>
-          {auth?.currentUser ? <h1>{auth.currentUser.email}</h1> : <h1>Not Logged In</h1>}
+          {auth?.currentUser ? <h1>{auth.currentUser.email}🟩</h1> : <h1>Not Logged In🟥</h1>}
         </div>
         <div>
           <input placeholder="Email..." onChange={(e) => setEmail(e.target.value)}/>
